@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Buzón de fiscalización ciudadana de Salvemos al Perú - Ate."
+    />
+    <title>Fiscalización | Salvemos al Perú - Ate</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="sub-header">
+      <div class="container sub-header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo-sap-ate.svg" alt="Salvemos al Perú - Ate" />
+        </a>
+        <nav class="sub-nav">
+          <a href="index.html">Inicio</a>
+          <a href="propuestas.html">Propuestas</a>
+          <a href="regidores.html">Regidores</a>
+          <a href="actividades.html">Actividades</a>
+          <a href="documentos.html">Documentos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="subpage">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Herramienta ciudadana</p>
+          <h1>Buzón de fiscalización ciudadana</h1>
+          <p class="page-lead">
+            Canal directo para que los vecinos reporten problemas en su zona y
+            ayuden a visibilizar las necesidades reales del distrito.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container join-grid">
+          <div>
+            <h2>¿Para qué sirve este buzón?</h2>
+            <ul class="join-list">
+              <li>Reportar problemas de inseguridad en tu zona.</li>
+              <li>Informar sobre basura, desorden o abandono de espacios públicos.</li>
+              <li>Comunicar fallas en pistas, veredas o transporte.</li>
+              <li>Alertar sobre posibles actos de corrupción municipal.</li>
+              <li>Ayudar a priorizar las necesidades reales del distrito.</li>
+            </ul>
+            <p>
+              Tu identidad será tratada con confidencialidad. Tu reporte ayuda a
+              construir una agenda de fiscalización conectada con la realidad de
+              Ate.
+            </p>
+          </div>
+          <form class="join-form">
+            <label>
+              Nombre o alias
+              <input type="text" name="identidad" placeholder="Opcional" />
+            </label>
+            <label>
+              Zona o referencia
+              <input type="text" name="zona" placeholder="Ej. Huaycán" />
+            </label>
+            <label>
+              Categoría
+              <select name="categoria">
+                <option>Delincuencia</option>
+                <option>Basura</option>
+                <option>Pistas y veredas</option>
+                <option>Parques y espacios públicos</option>
+                <option>Transporte y caos vial</option>
+                <option>Corrupción municipal</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <label>
+              Reporte
+              <textarea
+                name="reporte"
+                rows="6"
+                placeholder="Describe el problema de tu zona"
+              ></textarea>
+            </label>
+            <button class="button button-primary" type="button">
+              Enviar reporte
+            </button>
+            <p class="form-note">
+              Formulario de demostración. Puede conectarse a un backend o
+              servicio externo cuando definamos el flujo final.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

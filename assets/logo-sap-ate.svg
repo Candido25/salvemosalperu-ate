@@ -1,0 +1,14 @@
+<svg width="420" height="116" viewBox="0 0 420 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="116" rx="18" fill="white"/>
+  <path d="M315 24H385V92H315V24Z" stroke="#0F0F0F" stroke-width="8"/>
+  <path d="M325 87L375 29" stroke="#EF233C" stroke-width="12" stroke-linecap="square"/>
+  <path d="M24 29.5H157.7V47.5H24V29.5Z" fill="#0F0F0F"/>
+  <path d="M24 54H102V92H24V54Z" fill="#0F0F0F"/>
+  <path d="M111 54H194V92H111V54Z" fill="#0F0F0F"/>
+  <path d="M202 54H287V92H202V54Z" fill="#0F0F0F"/>
+  <path d="M167 29.5H279V47.5H167V29.5Z" fill="#EF233C"/>
+  <path d="M291 29.5H305V47.5H291V29.5Z" fill="#0F0F0F"/>
+  <text x="28" y="44" font-family="Montserrat, Arial, sans-serif" font-size="31" font-weight="800" fill="#0F0F0F">SALVEMOS AL</text>
+  <text x="27" y="88" font-family="Montserrat, Arial, sans-serif" font-size="54" font-weight="800" fill="#0F0F0F">PERÚ</text>
+  <text x="317" y="109" font-family="Montserrat, Arial, sans-serif" font-size="22" font-weight="700" fill="#AB202E">ATE</text>
+</svg>
