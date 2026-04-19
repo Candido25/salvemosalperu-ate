@@ -206,11 +206,11 @@ h3 {
   position: absolute;
   top: 0;
   left: 50%;
-  width: min(42vw, 540px);
+  width: min(18vw, 240px);
   height: 100%;
   background: var(--color-red);
-  clip-path: polygon(28% 0, 100% 0, 72% 100%, 0 100%);
-  transform: translateX(-50%);
+  transform: translateX(-50%) skewX(-45deg);
+  transform-origin: center;
   pointer-events: none;
 }
 
@@ -695,8 +695,7 @@ h3 {
   }
 
   .hero::before {
-    width: min(52vw, 360px);
-    clip-path: polygon(24% 0, 100% 0, 76% 100%, 0 100%);
+    width: min(22vw, 180px);
   }
 
   .hero-grid,
