@@ -13,7 +13,8 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
-  --container: 1180px;
+  --container: 1600px;
+  --gutter: clamp(1rem, 2vw, 2.5rem);
 }
 
 * {
@@ -60,7 +61,7 @@ h3 {
 }
 
 .container {
-  width: min(var(--container), calc(100% - 2rem));
+  width: min(var(--container), calc(100% - (var(--gutter) * 2)));
   margin: 0 auto;
 }
 
@@ -203,14 +204,14 @@ h3 {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  gap: clamp(2rem, 4vw, 5rem);
   align-items: center;
-  padding: 4rem 0;
+  padding: clamp(3rem, 5vw, 5rem) 0;
 }
 
 .hero-copy {
-  max-width: 560px;
+  max-width: 680px;
 }
 
 .hero h1,
@@ -336,7 +337,7 @@ h3 {
 .join-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 4rem);
 }
 
 .section-head {
@@ -362,7 +363,7 @@ h3 {
 .long-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: clamp(1rem, 1.6vw, 1.75rem);
   margin-top: 2rem;
 }
 
@@ -521,7 +522,7 @@ h3 {
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .footer-grid h3 {
@@ -641,6 +642,10 @@ h3 {
 }
 
 @media (max-width: 680px) {
+  :root {
+    --gutter: 1rem;
+  }
+
   .section {
     padding: 4.25rem 0;
   }
