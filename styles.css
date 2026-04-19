@@ -155,7 +155,10 @@ h3 {
 }
 
 .nav-cta::after {
-  display: none;
+  left: 1rem;
+  right: 1rem;
+  width: auto;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .site-nav a.is-active,
@@ -201,12 +204,13 @@ h3 {
 .hero::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  width: min(24vw, 320px);
-  height: 150%;
+  width: min(42vw, 540px);
+  height: 100%;
   background: var(--color-red);
-  transform: translate(-50%, -50%) rotate(45deg);
+  clip-path: polygon(28% 0, 100% 0, 72% 100%, 0 100%);
+  transform: translateX(-50%);
   pointer-events: none;
 }
 
@@ -516,6 +520,52 @@ h3 {
   padding: 1.6rem;
 }
 
+.complaint-form {
+  transform: translateY(-4.5rem);
+}
+
+.floating-results-button {
+  position: fixed;
+  right: clamp(1rem, 2vw, 2rem);
+  bottom: clamp(1rem, 2vw, 2rem);
+  z-index: 45;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 200px;
+  padding: 0.95rem 1.1rem;
+  border-radius: 22px;
+  background: var(--color-red);
+  color: #fff;
+  box-shadow: 0 22px 48px rgba(239, 35, 60, 0.28);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.floating-results-button:hover,
+.floating-results-button:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 26px 54px rgba(239, 35, 60, 0.34);
+  background: var(--color-red-deep);
+}
+
+.floating-results-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.88;
+}
+
+.floating-results-button strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
 .join-form label {
   display: block;
   margin-bottom: 1rem;
@@ -645,8 +695,8 @@ h3 {
   }
 
   .hero::before {
-    width: min(32vw, 260px);
-    height: 140%;
+    width: min(52vw, 360px);
+    clip-path: polygon(24% 0, 100% 0, 76% 100%, 0 100%);
   }
 
   .hero-grid,
@@ -659,6 +709,10 @@ h3 {
 
   .hero-panel {
     justify-content: flex-start;
+  }
+
+  .complaint-form {
+    transform: none;
   }
 
   .issue-grid,
@@ -700,5 +754,12 @@ h3 {
 
   .brand img {
     width: 220px;
+  }
+
+  .floating-results-button {
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    min-width: 0;
   }
 }
