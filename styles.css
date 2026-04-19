@@ -945,6 +945,18 @@ h3 {
   gap: 1.25rem;
 }
 
+.home-problem .home-stack {
+  gap: 1rem;
+}
+
+.home-problem .home-heading-block {
+  max-width: 980px;
+}
+
+.home-problem .home-problem-grid {
+  margin-top: 0.25rem;
+}
+
 .home-axis-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -962,6 +974,10 @@ h3 {
 .home-problem-item,
 .home-axis-item {
   padding: 1.65rem;
+}
+
+.home-problem-item {
+  border-top: 5px solid var(--color-red);
 }
 
 .home-problem-item strong,
