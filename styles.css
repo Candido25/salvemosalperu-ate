@@ -981,6 +981,17 @@ h3 {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.home-problem-quote {
+  display: block;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.98rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--color-red);
+}
+
 .home-section-light .home-problem-item,
 .home-section-light .home-axis-item,
 .home-section-light .home-contrast-band,
@@ -994,6 +1005,10 @@ h3 {
 .home-section-light .home-axis-item p,
 .home-section-light .home-contrast-band p {
   color: #555b66;
+}
+
+.home-section-light .home-problem-quote {
+  color: var(--color-red-deep);
 }
 
 .home-split,
