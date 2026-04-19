@@ -1018,6 +1018,34 @@ h3 {
   color: #ff5e71;
 }
 
+.home-axis-list,
+.proposal-bullet-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-axis-list li,
+.proposal-bullet-list li {
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.home-axis-list li::before,
+.proposal-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: var(--color-red);
+}
+
 .home-axis-icon {
   display: inline-flex;
   align-items: center;
@@ -1042,6 +1070,24 @@ h3 {
 .home-contrast-band {
   padding: 2rem;
   border-left: 6px solid var(--color-red);
+}
+
+.home-impact-line,
+.proposal-impact p {
+  max-width: 720px;
+  margin: 2rem 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.home-impact-line {
+  color: var(--color-black);
+}
+
+.proposal-impact {
+  margin-top: 2rem;
 }
 
 .home-documents .document-card {
