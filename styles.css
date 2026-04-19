@@ -315,6 +315,12 @@ h3 {
   justify-content: flex-end;
 }
 
+.hero-panel-stack {
+  display: grid;
+  gap: 1.25rem;
+  width: min(100%, 430px);
+}
+
 .hero-card,
 .join-form,
 .long-card,
@@ -330,8 +336,64 @@ h3 {
 }
 
 .hero-card {
-  max-width: 430px;
   padding: 2rem;
+}
+
+.candidate-card {
+  padding: 1.6rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+
+.candidate-badge {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(239, 35, 60, 0.1);
+  color: var(--color-red-deep);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.candidate-photo-frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1rem;
+  border: 2px dashed rgba(171, 32, 46, 0.35);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(239, 35, 60, 0.05), rgba(255, 255, 255, 0.88)),
+    #fff;
+}
+
+.candidate-photo-frame span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-red-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.candidate-name {
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+
+.candidate-note {
+  margin-bottom: 0;
+  font-size: 0.98rem;
 }
 
 .panel-kicker {
