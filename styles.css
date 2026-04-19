@@ -104,6 +104,7 @@ h3 {
 
 .brand img {
   width: 190px;
+  height: auto;
 }
 
 .site-nav,
@@ -663,6 +664,6 @@ h3 {
   }
 
   .brand img {
-    width: 172px;
+    width: 182px;
   }
 }
