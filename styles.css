@@ -180,15 +180,16 @@ h3 {
   display: flex;
   align-items: center;
   background:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 38%,
-      rgba(239, 35, 60, 1) 38%,
-      rgba(239, 35, 60, 1) 62%,
-      rgba(255, 255, 255, 1) 62%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 250, 248, 1));
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-red);
+  clip-path: polygon(45% 0, 59% 0, 43% 100%, 29% 100%);
+  pointer-events: none;
 }
 
 .hero-band {
@@ -196,7 +197,8 @@ h3 {
   inset: 0;
   background:
     radial-gradient(circle at 20% 18%, rgba(171, 32, 46, 0.08), transparent 22%),
-    radial-gradient(circle at 82% 72%, rgba(171, 32, 46, 0.12), transparent 24%);
+    radial-gradient(circle at 82% 72%, rgba(171, 32, 46, 0.12), transparent 24%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent 44%);
   pointer-events: none;
 }
 
@@ -468,6 +470,19 @@ h3 {
   font-size: 1.1rem;
 }
 
+.document-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-red-deep);
+}
+
 .join {
   background: linear-gradient(180deg, var(--color-cream), rgba(255, 255, 255, 0));
 }
@@ -608,15 +623,11 @@ h3 {
   .hero {
     min-height: auto;
     background:
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 28%,
-        rgba(239, 35, 60, 1) 28%,
-        rgba(239, 35, 60, 1) 58%,
-        rgba(255, 255, 255, 1) 58%,
-        rgba(255, 255, 255, 1) 100%
-      );
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 250, 248, 1));
+  }
+
+  .hero::before {
+    clip-path: polygon(54% 0, 78% 0, 48% 100%, 24% 100%);
   }
 
   .hero-grid,
