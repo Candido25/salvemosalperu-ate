@@ -206,7 +206,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 50%;
-  width: min(18vw, 240px);
+  width: min(27vw, 360px);
   height: 100%;
   background: var(--color-red);
   transform: translateX(-50%) skewX(-45deg);
@@ -757,7 +757,7 @@ h3 {
   }
 
   .hero::before {
-    width: min(22vw, 180px);
+    width: min(33vw, 270px);
   }
 
   .hero-grid,
