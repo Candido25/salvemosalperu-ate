@@ -265,12 +265,12 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
-  padding: 0 1.35rem;
+  min-height: 60px;
+  padding: 0 1.65rem;
   border-radius: 999px;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.96rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 800;
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -284,13 +284,14 @@ h3 {
 }
 
 .button-primary {
-  background: var(--color-black);
+  background: var(--color-red);
   color: #fff;
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.84);
+  background: #ffffff;
   border: 1px solid rgba(18, 18, 18, 0.08);
+  color: var(--color-black);
 }
 
 .hero-meta {
@@ -729,6 +730,26 @@ h3 {
   color: #fff;
 }
 
+.home-section-light {
+  background: #ffffff;
+  color: var(--color-black);
+}
+
+.home-section-light h2,
+.home-section-light h3,
+.home-section-light strong {
+  color: var(--color-black);
+}
+
+.home-section-light p {
+  color: #4c505b;
+}
+
+.home-section-red {
+  background: linear-gradient(180deg, #b1162d 0%, #8f1024 100%);
+  color: #fff;
+}
+
 .home-main h1,
 .home-main h2,
 .home-main h3,
@@ -858,7 +879,7 @@ h3 {
 
 .button-ghost {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.28);
   color: #fff;
 }
 
@@ -940,7 +961,7 @@ h3 {
 
 .home-problem-item,
 .home-axis-item {
-  padding: 1.5rem;
+  padding: 1.65rem;
 }
 
 .home-problem-item strong,
@@ -957,7 +978,22 @@ h3 {
 .home-axis-item p,
 .home-contrast-band p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.home-section-light .home-problem-item,
+.home-section-light .home-axis-item,
+.home-section-light .home-contrast-band,
+.home-section-light .home-join-form {
+  background: #ffffff;
+  border-color: rgba(18, 18, 18, 0.08);
+  box-shadow: 0 18px 50px rgba(18, 18, 18, 0.08);
+}
+
+.home-section-light .home-problem-item p,
+.home-section-light .home-axis-item p,
+.home-section-light .home-contrast-band p {
+  color: #555b66;
 }
 
 .home-split,
@@ -982,14 +1018,35 @@ h3 {
   color: #ff5e71;
 }
 
+.home-axis-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  background: rgba(239, 35, 60, 0.12);
+}
+
+.home-axis-icon svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: none;
+  stroke: var(--color-red);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .home-contrast-band {
-  padding: 1.8rem;
+  padding: 2rem;
   border-left: 6px solid var(--color-red);
 }
 
 .home-documents .document-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(18, 18, 18, 0.08);
 }
 
 .home-documents .document-card:hover,
@@ -999,16 +1056,16 @@ h3 {
 
 .home-documents .document-card span,
 .home-documents .document-card strong {
-  color: #fff;
+  color: var(--color-black);
 }
 
 .home-documents .document-card p {
-  color: rgba(255, 255, 255, 0.72);
+  color: #565b66;
 }
 
 .home-join-form {
-  padding: 1.7rem;
-  background: rgba(255, 255, 255, 0.06);
+  padding: 1.9rem;
+  background: #ffffff;
 }
 
 .home-join-form input,
