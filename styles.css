@@ -967,7 +967,7 @@ h3 {
 
 .home-problem {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 
 .home-problem-grid,
@@ -978,7 +978,7 @@ h3 {
 }
 
 .home-problem .home-stack {
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .home-problem .home-heading-block {
@@ -990,7 +990,7 @@ h3 {
 }
 
 .home-territory-map {
-  margin: 0;
+  margin: -0.35rem 0 0;
   padding: 1rem;
   border-radius: 28px;
   background: #ffffff;
@@ -1283,7 +1283,7 @@ h3 {
   }
 
   .home-problem {
-    padding-top: 1.25rem;
+    padding-top: 0.35rem;
   }
 
   .home-hero-stripe {
@@ -1358,7 +1358,7 @@ h3 {
   }
 
   .home-problem {
-    padding-top: 1rem;
+    padding-top: 0.25rem;
   }
 
   .home-heading-block h2,
