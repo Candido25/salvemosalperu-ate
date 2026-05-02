@@ -878,8 +878,8 @@ h3 {
 }
 
 .button-ghost {
-  background: transparent;
-  border: 2px solid rgba(18, 18, 18, 0.18);
+  background: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.08);
   color: var(--color-black);
 }
 
@@ -967,6 +967,7 @@ h3 {
 
 .home-problem {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
 }
 
 .home-problem-grid,
@@ -1248,7 +1249,7 @@ h3 {
 
   .home-hero {
     min-height: auto;
-    padding-top: 2.5rem;
+    padding: 2.5rem 0 2rem;
   }
 
   .home-candidate-panel {
@@ -1258,6 +1259,10 @@ h3 {
   .home-candidate-photo {
     aspect-ratio: 5 / 4;
     max-height: 460px;
+  }
+
+  .home-problem {
+    padding-top: 1.25rem;
   }
 
   .home-hero-stripe {
@@ -1329,6 +1334,10 @@ h3 {
 
   .home-candidate-photo img {
     object-position: center 12%;
+  }
+
+  .home-problem {
+    padding-top: 1rem;
   }
 
   .home-heading-block h2,
