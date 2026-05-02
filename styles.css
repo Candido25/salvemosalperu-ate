@@ -994,13 +994,13 @@ h3 {
 }
 
 .home-section-tag-xl {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.55rem;
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--color-red-deep);
+  color: var(--color-red);
   font-family: "Bebas Neue", "Montserrat", sans-serif;
-  font-size: clamp(4.5rem, 13vw, 8.75rem);
+  font-size: clamp(5.2rem, 14vw, 9.75rem);
   line-height: 0.88;
   letter-spacing: 0.05em;
   box-shadow: none;
@@ -1239,6 +1239,27 @@ h3 {
 .home-problem-item,
 .home-axis-item {
   padding: 1.65rem;
+}
+
+.home-axis-card {
+  display: block;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.home-axis-card:hover,
+.home-axis-card:focus-visible {
+  transform: translateY(-8px);
+  border-color: rgba(239, 35, 60, 0.28);
+  box-shadow: 0 24px 60px rgba(239, 35, 60, 0.14);
+}
+
+.home-axis-card:focus-visible {
+  outline: 3px solid rgba(239, 35, 60, 0.18);
+  outline-offset: 4px;
 }
 
 .home-problem-item {
