@@ -723,6 +723,204 @@ h3 {
     );
 }
 
+.regidores-page {
+  background:
+    linear-gradient(180deg, #fff7f6 0%, #ffffff 38%, #fff7f6 100%);
+}
+
+.regidores-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.regidores-hero::after {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: 12%;
+  width: min(28vw, 320px);
+  height: 150%;
+  background: linear-gradient(180deg, rgba(239, 35, 60, 0.92), rgba(171, 32, 46, 0.96));
+  transform: rotate(45deg);
+  box-shadow: 0 0 70px rgba(239, 35, 60, 0.16);
+  pointer-events: none;
+}
+
+.regidores-hero .container,
+.regidores-message-wrap,
+.regidores-close-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.regidores-message {
+  padding-top: 2.5rem;
+}
+
+.regidores-message-wrap,
+.regidores-close-wrap {
+  max-width: 980px;
+}
+
+.regidores-message-copy,
+.regidores-close-wrap {
+  padding: clamp(1.75rem, 3vw, 2.6rem);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  box-shadow: 0 22px 58px rgba(18, 18, 18, 0.08);
+}
+
+.regidores-message-copy h2,
+.regidores-close-wrap h2 {
+  font-family: "Bebas Neue", "Montserrat", sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.regidores-grid-section {
+  padding-top: 2.5rem;
+}
+
+.regidores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
+.regidor-card {
+  overflow: hidden;
+  border-radius: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  box-shadow: 0 22px 60px rgba(18, 18, 18, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.regidor-card:hover,
+.regidor-card:focus-within {
+  transform: translateY(-5px);
+  border-color: rgba(239, 35, 60, 0.2);
+  box-shadow: 0 26px 70px rgba(18, 18, 18, 0.12);
+}
+
+.regidor-photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background:
+    linear-gradient(180deg, rgba(239, 35, 60, 0.12), rgba(255, 255, 255, 0.95)),
+    linear-gradient(135deg, rgba(239, 35, 60, 0.16), transparent 58%);
+}
+
+.regidor-photo::after {
+  content: "";
+  position: absolute;
+  right: -18%;
+  bottom: -18%;
+  width: 70%;
+  height: 46%;
+  background: rgba(239, 35, 60, 0.9);
+  transform: rotate(45deg);
+}
+
+.regidor-photo-inner {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+  gap: 0.45rem;
+  text-align: center;
+}
+
+.regidor-photo-inner span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 2px solid rgba(239, 35, 60, 0.16);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-red-deep);
+  box-shadow: 0 16px 36px rgba(18, 18, 18, 0.08);
+}
+
+.regidor-photo-inner small {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.regidor-card-body {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.35rem;
+}
+
+.regidor-role {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-red-deep);
+}
+
+.regidor-card h2 {
+  margin: 0;
+  font-size: 1.32rem;
+  line-height: 1.08;
+}
+
+.regidor-profile,
+.regidor-focus {
+  margin: 0;
+}
+
+.regidor-profile {
+  min-height: 4.2rem;
+}
+
+.regidor-focus strong {
+  color: var(--color-black);
+}
+
+.regidor-button {
+  min-height: 50px;
+  width: fit-content;
+  margin-top: 0.25rem;
+}
+
+.regidores-close {
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+}
+
+.regidores-close-wrap .button {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .regidores-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .home-main {
   background: #ffffff;
   color: var(--color-black);
@@ -1382,6 +1580,15 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .regidores-hero::after {
+    right: 4%;
+    width: min(34vw, 250px);
+  }
+
+  .regidores-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .home-cause-visual img {
     min-height: 360px;
   }
@@ -1413,6 +1620,15 @@ h3 {
   .long-grid,
   .home-problem-grid,
   .home-axis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .regidores-hero::after {
+    right: -1.5rem;
+    width: min(42vw, 190px);
+  }
+
+  .regidores-grid {
     grid-template-columns: 1fr;
   }
 
