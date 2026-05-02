@@ -812,7 +812,7 @@ h3 {
   min-height: auto;
   display: flex;
   align-items: center;
-  padding: 2.5rem 0 1.25rem;
+  padding: 1.4rem 0 0.45rem;
   background: #ffffff;
 }
 
@@ -1270,7 +1270,7 @@ h3 {
 
   .home-hero {
     min-height: auto;
-    padding: 2.5rem 0 2rem;
+    padding: 1.4rem 0 0.8rem;
   }
 
   .home-candidate-panel {
