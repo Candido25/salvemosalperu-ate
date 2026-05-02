@@ -993,6 +993,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.home-section-tag-xl {
+  margin-bottom: 0.35rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-red-deep);
+  font-family: "Bebas Neue", "Montserrat", sans-serif;
+  font-size: clamp(4.5rem, 13vw, 8.75rem);
+  line-height: 0.88;
+  letter-spacing: 0.05em;
+  box-shadow: none;
+}
+
 .home-heading-block h2,
 .home-final-wrap h2 {
   margin-bottom: 0;
@@ -1375,6 +1388,170 @@ h3 {
   color: #ff5e71;
 }
 
+.home-axis-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+}
+
+.topic-page {
+  background:
+    linear-gradient(180deg, #fff7f6 0%, #ffffff 38%, #fff7f6 100%);
+}
+
+.topic-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-hero::after {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: 10%;
+  width: min(28vw, 320px);
+  height: 150%;
+  background: linear-gradient(180deg, rgba(239, 35, 60, 0.92), rgba(171, 32, 46, 0.96));
+  transform: rotate(45deg);
+  box-shadow: 0 0 70px rgba(239, 35, 60, 0.16);
+  pointer-events: none;
+}
+
+.topic-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.topic-section {
+  padding-top: 2.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.topic-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.topic-pillar {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.8rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.topic-card {
+  padding: clamp(1.5rem, 2vw, 2rem);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  box-shadow: 0 22px 58px rgba(18, 18, 18, 0.08);
+}
+
+.topic-card-wide {
+  grid-column: 1 / -1;
+}
+
+.topic-card h2 {
+  margin-bottom: 0.85rem;
+  font-family: "Bebas Neue", "Montserrat", sans-serif;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  line-height: 0.96;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.topic-bullet-list,
+.topic-legal-list {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topic-bullet-list li,
+.topic-legal-list li {
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.topic-bullet-list li::before,
+.topic-legal-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: var(--color-red);
+}
+
+.topic-legal-list strong {
+  color: var(--color-black);
+}
+
+.topic-legal-list a {
+  display: inline-flex;
+  margin-left: 0.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-red-deep);
+}
+
+.topic-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.topic-detail-card {
+  padding: 1.1rem 1.15rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(239, 35, 60, 0.08), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(239, 35, 60, 0.15);
+}
+
+.topic-detail-card strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-black);
+}
+
+.topic-detail-card p {
+  margin: 0;
+  color: #565b66;
+}
+
+.topic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
 .home-axis-list,
 .proposal-bullet-list {
   display: grid;
@@ -1592,6 +1769,19 @@ h3 {
   .home-cause-visual img {
     min-height: 360px;
   }
+
+  .topic-hero::after {
+    right: 4%;
+    width: min(34vw, 250px);
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-detail-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1642,6 +1832,11 @@ h3 {
     min-height: 300px;
   }
 
+  .topic-hero::after {
+    right: -1.5rem;
+    width: min(42vw, 190px);
+  }
+
   .brand img {
     width: 220px;
   }
@@ -1671,6 +1866,10 @@ h3 {
   .home-heading-block h2,
   .home-final-wrap h2 {
     font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .home-section-tag-xl {
+    font-size: clamp(3.8rem, 18vw, 5.8rem);
   }
 
   .home-hero-stripe {
