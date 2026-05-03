@@ -61,14 +61,25 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "WebSite",
+            "@id": "https://salvemosalperu-ate.org.pe/#website",
+            "url": "https://salvemosalperu-ate.org.pe/",
+            "name": "Salvemos al Perú Ate",
+            "publisher": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+            "inLanguage": "es-PE"
+          },
+          {
             "@type": "WebPage",
             "@id": "https://salvemosalperu-ate.org.pe/#webpage",
             "url": "https://salvemosalperu-ate.org.pe/",
             "name": "Salvemos al Perú Ate | Candidato y equipo distrital",
             "description": "Sitio oficial de Salvemos al Perú Ate. Candidato, equipo distrital, regidores y propuestas para ordenar el distrito.",
+            "isPartOf": { "@id": "https://salvemosalperu-ate.org.pe/#website" },
+            "publisher": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
             "about": [
               { "@id": "https://salvemosalperu-ate.org.pe/#party" },
-              { "@id": "https://salvemosalperu-ate.org.pe/#candidate" }
+              { "@id": "https://salvemosalperu-ate.org.pe/#candidate" },
+              { "@id": "https://salvemosalperu-ate.org.pe/#district" }
             ],
             "primaryImageOfPage": { "@id": "https://salvemosalperu-ate.org.pe/#candidate-image" }
           },
@@ -110,6 +121,7 @@
             "logo": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
             "image": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
             "description": "Organización política distrital de Salvemos al Perú Ate orientada a orden, seguridad y gestión municipal.",
+            "slogan": "Orden, seguridad y gestión municipal para Ate",
             "areaServed": { "@id": "https://salvemosalperu-ate.org.pe/#district" },
             "member": { "@id": "https://salvemosalperu-ate.org.pe/#candidate" }
           },
@@ -173,6 +185,9 @@
             <div class="home-hero-copy">
               <p class="home-kicker">Sitio oficial de Salvemos al Perú - Ate</p>
               <h1>Edwin Orlando Astucuri Coicaposa y Salvemos al Perú Ate para ordenar el distrito</h1>
+              <p class="home-entity-line">
+                Partido político distrital · Candidato a la alcaldía · Ate, Lima, Perú
+              </p>
               <p class="home-hero-text">
                 Candidato, partido y equipo distrital unidos para recuperar autoridad municipal en Ate.
               </p>
@@ -201,7 +216,8 @@
                 </picture>
                 <span class="home-candidate-mark">Salvemos al Perú - Ate</span>
               </div>
-              <p class="home-candidate-name">EDWIN ORLANDO ASTUCURI COICAPOSA</p>
+              <h2 class="home-candidate-name">EDWIN ORLANDO ASTUCURI COICAPOSA</h2>
+              <p class="home-candidate-role">Salvemos al Perú Ate · Distrito de Ate · Lima, Perú</p>
               <p class="home-candidate-copy">
                 Una candidatura para recuperar el orden, exigir resultados y
                 volver a poner la municipalidad a trabajar.
@@ -524,6 +540,19 @@
               <a class="button button-primary" href="#inicio">Volver al inicio</a>
               <a class="button button-ghost" href="fiscalizacion.html">Fiscaliza con nosotros</a>
             </div>
+          </div>
+        </section>
+
+        <section class="home-section home-official-source home-section-light" id="fuente-oficial">
+          <div class="container home-official-source-wrap">
+            <p class="home-section-tag">Fuente oficial</p>
+            <h2>Web oficial de Salvemos al Perú Ate y de la candidatura de Edwin Orlando Astucuri Coicaposa en el distrito de Ate.</h2>
+            <p>
+              Esta página concentra la identidad institucional del partido,
+              la presentación oficial del candidato, las propuestas, el trabajo
+              territorial y los documentos públicos vinculados a la campaña en
+              Ate, Lima, Perú.
+            </p>
           </div>
         </section>
       </main>
