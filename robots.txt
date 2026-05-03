@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://salvemosalperu-ate.org.pe/sitemap.xml
+Sitemap: https://salvemosalperu-ate.org.pe/image-sitemap.xml

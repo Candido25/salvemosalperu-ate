@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://salvemosalperu-ate.org.pe/</loc>
+    <image:image>
+      <image:loc>https://salvemosalperu-ate.org.pe/img/candidato-alcalde-ate-edwin-astucuri.jpg</image:loc>
+      <image:title>Edwin Orlando Astucuri Coicaposa candidato a la alcaldía de Ate</image:title>
+      <image:caption>Imagen principal del candidato oficial de Salvemos al Perú Ate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://salvemosalperu-ate.org.pe/img/logo-partido-salvemos-al-peru-ate.png</image:loc>
+      <image:title>Logo oficial del partido Salvemos al Perú Ate</image:title>
+      <image:caption>Imagen institucional oficial del partido político distrital Salvemos al Perú Ate.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://salvemosalperu-ate.org.pe/actividades.html</loc>
+    <image:image>
+      <image:loc>https://salvemosalperu-ate.org.pe/assets/territory/mapa-zonas-distrito-ate.webp</image:loc>
+      <image:title>Zonas del distrito de Ate</image:title>
+      <image:caption>Mapa territorial referencial del distrito de Ate.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://salvemosalperu-ate.org.pe/</loc>
+    <image:image>
+      <image:loc>https://salvemosalperu-ate.org.pe/assets/problems/problemas-urbanos-ate.webp</image:loc>
+      <image:title>Problemas urbanos de Ate</image:title>
+      <image:caption>Collage visual de inseguridad, desorden y deterioro urbano en Ate.</image:caption>
+    </image:image>
+  </url>
+</urlset>
