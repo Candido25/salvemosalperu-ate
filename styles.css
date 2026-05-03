@@ -1106,6 +1106,9 @@ h3 {
   flex-wrap: nowrap;
   gap: 0.55rem;
   margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-7.5rem);
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -2286,6 +2289,7 @@ h3 {
     gap: 0.5rem;
     margin-top: 0.9rem;
     flex-wrap: wrap;
+    transform: translateY(-3.5rem);
   }
 
   .home-social-button {
