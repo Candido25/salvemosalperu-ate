@@ -1029,8 +1029,8 @@ h3 {
   overflow: hidden;
   min-height: calc(100svh - 84px);
   display: flex;
-  align-items: center;
-  padding: 2.2rem 0;
+  align-items: stretch;
+  padding: 1.4rem 0 2.2rem;
   background: #ffffff;
 }
 
@@ -1054,6 +1054,16 @@ h3 {
   transform-origin: center;
   box-shadow: 0 0 60px rgba(239, 35, 60, 0.18);
   pointer-events: none;
+}
+
+.home-hero-topbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 
 .home-hero-grid {
@@ -1105,7 +1115,7 @@ h3 {
   display: flex;
   flex-wrap: nowrap;
   gap: 0.55rem;
-  margin-top: 1rem;
+  margin-top: 0;
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -2151,6 +2161,11 @@ h3 {
     padding: 1.8rem 0;
   }
 
+  .home-hero-topbar {
+    padding-top: 0.15rem;
+    padding-bottom: 0.75rem;
+  }
+
   .home-candidate-panel {
     margin-inline: auto;
   }
@@ -2284,7 +2299,7 @@ h3 {
 
   .home-social-row {
     gap: 0.5rem;
-    margin-top: 0.9rem;
+    margin-top: 0;
     flex-wrap: wrap;
   }
 
