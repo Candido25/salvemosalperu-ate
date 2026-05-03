@@ -91,6 +91,17 @@
             "height": 1571
           },
           {
+            "@type": "Place",
+            "@id": "https://salvemosalperu-ate.org.pe/#district",
+            "name": "Distrito de Ate",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ate",
+              "addressRegion": "Lima",
+              "addressCountry": "PE"
+            }
+          },
+          {
             "@type": "PoliticalParty",
             "@id": "https://salvemosalperu-ate.org.pe/#party",
             "name": "Salvemos al Perú Ate",
@@ -99,6 +110,7 @@
             "logo": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
             "image": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
             "description": "Organización política distrital de Salvemos al Perú Ate orientada a orden, seguridad y gestión municipal.",
+            "areaServed": { "@id": "https://salvemosalperu-ate.org.pe/#district" },
             "member": { "@id": "https://salvemosalperu-ate.org.pe/#candidate" }
           },
           {
@@ -110,6 +122,8 @@
             "image": { "@id": "https://salvemosalperu-ate.org.pe/#candidate-image" },
             "affiliation": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
             "worksFor": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+            "memberOf": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+            "homeLocation": { "@id": "https://salvemosalperu-ate.org.pe/#district" },
             "mainEntityOfPage": { "@id": "https://salvemosalperu-ate.org.pe/#webpage" }
           }
         ]
@@ -157,10 +171,10 @@
           <div class="home-hero-stripe"></div>
           <div class="container home-hero-grid">
             <div class="home-hero-copy">
-              <p class="home-kicker">Salvemos al Perú - Ate</p>
-              <h1>Ate se desordenó. Nosotros lo vamos a poner en su sitio.</h1>
+              <p class="home-kicker">Sitio oficial de Salvemos al Perú - Ate</p>
+              <h1>Edwin Orlando Astucuri Coicaposa y Salvemos al Perú Ate para ordenar el distrito</h1>
               <p class="home-hero-text">
-                Basta de inseguridad, obras mal hechas y autoridades ausentes.
+                Candidato, partido y equipo distrital unidos para recuperar autoridad municipal en Ate.
               </p>
               <div class="home-hero-actions">
                 <a class="button button-primary" href="#propuestas">
@@ -194,6 +208,44 @@
               </p>
               <a class="text-link" href="regidores.html">Conoce al equipo distrital</a>
             </aside>
+          </div>
+        </section>
+
+        <section class="home-section home-identity home-section-light" id="identidad-oficial">
+          <div class="container home-identity-grid">
+            <article class="home-identity-card">
+              <p class="home-section-tag">Identidad institucional</p>
+              <h2>Salvemos al Perú Ate es la organización política distrital que respalda esta candidatura.</h2>
+              <p>
+                Esta web presenta de forma oficial al partido distrital, su
+                candidato a la alcaldía y su agenda para el distrito de Ate,
+                con una relación directa entre propuesta política, equipo y
+                territorio.
+              </p>
+              <div class="home-identity-brand">
+                <img
+                  src="img/logo-salvemos-al-peru-ate.png"
+                  alt="Logo oficial del partido político Salvemos al Perú Ate"
+                  width="1200"
+                  height="295"
+                />
+              </div>
+            </article>
+            <article class="home-identity-card home-identity-candidate">
+              <p class="home-section-tag">Candidato oficial</p>
+              <h2>Edwin Orlando Astucuri Coicaposa representa a Salvemos al Perú Ate en el distrito.</h2>
+              <p>
+                La candidatura se presenta de manera explícita como parte de la
+                organización distrital Salvemos al Perú Ate y orienta su trabajo
+                al gobierno local, la fiscalización y el orden urbano en el
+                distrito de Ate.
+              </p>
+              <ul class="home-identity-list">
+                <li>Partido: Salvemos al Perú Ate</li>
+                <li>Candidato: Edwin Orlando Astucuri Coicaposa</li>
+                <li>Distrito: Ate, Lima, Perú</li>
+              </ul>
+            </article>
           </div>
         </section>
 
