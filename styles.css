@@ -1210,6 +1210,17 @@ h3 {
   box-shadow: 0 18px 50px rgba(18, 18, 18, 0.08);
 }
 
+.home-territory-title {
+  margin: 0 0 0.9rem;
+  text-align: center;
+  font-family: "Bebas Neue", "Montserrat", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
 .home-territory-map img {
   width: 100%;
   border-radius: 20px;
