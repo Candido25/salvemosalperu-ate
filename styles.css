@@ -13,8 +13,8 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
-  --container: 1600px;
-  --gutter: clamp(1rem, 2vw, 2.5rem);
+  --container: 1840px;
+  --gutter: clamp(1rem, 1.5vw, 2rem);
 }
 
 * {
@@ -63,6 +63,13 @@ h3 {
 .container {
   width: min(var(--container), calc(100% - (var(--gutter) * 2)));
   margin: 0 auto;
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --container: 1920px;
+    --gutter: clamp(1rem, 1.1vw, 1.75rem);
+  }
 }
 
 .eyebrow {
