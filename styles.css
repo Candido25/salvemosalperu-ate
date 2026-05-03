@@ -1273,6 +1273,27 @@ h3 {
   outline-offset: 4px;
 }
 
+.home-problem-card {
+  display: block;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.home-problem-card:hover,
+.home-problem-card:focus-visible {
+  transform: translateY(-8px);
+  border-color: rgba(239, 35, 60, 0.28);
+  box-shadow: 0 24px 60px rgba(239, 35, 60, 0.14);
+}
+
+.home-problem-card:focus-visible {
+  outline: 3px solid rgba(239, 35, 60, 0.18);
+  outline-offset: 4px;
+}
+
 .home-problem-item {
   border-top: 5px solid var(--color-red);
 }
