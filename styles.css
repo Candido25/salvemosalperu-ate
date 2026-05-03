@@ -1101,6 +1101,60 @@ h3 {
   color: #313642;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.home-social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.home-social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  box-shadow: 0 10px 24px rgba(18, 18, 18, 0.08);
+  color: var(--color-red);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.home-social-button:hover,
+.home-social-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(239, 35, 60, 0.22);
+  box-shadow: 0 14px 30px rgba(239, 35, 60, 0.12);
+}
+
+.home-social-button:focus-visible {
+  outline: 3px solid rgba(239, 35, 60, 0.16);
+  outline-offset: 2px;
+}
+
+.home-social-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .home-hero-actions,
 .home-final-actions {
   display: flex;
@@ -2157,6 +2211,21 @@ h3 {
 
   .home-hero-lead {
     font-size: 1.08rem;
+  }
+
+  .home-social-row {
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+  }
+
+  .home-social-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-social-button svg {
+    width: 18px;
+    height: 18px;
   }
 
   .home-candidate-photo {
