@@ -1101,36 +1101,32 @@ h3 {
   color: #313642;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .home-social-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.65rem;
   margin-top: 1rem;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .home-social-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  gap: 0.45rem;
+  min-height: 38px;
+  max-height: 40px;
+  padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  background: #ffffff;
-  border: 1px solid rgba(18, 18, 18, 0.08);
+  border: 1px solid transparent;
   box-shadow: 0 10px 24px rgba(18, 18, 18, 0.08);
-  color: var(--color-red);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
   transition:
     transform 160ms ease,
     box-shadow 160ms ease,
@@ -1152,7 +1148,45 @@ h3 {
 .home-social-button svg {
   width: 20px;
   height: 20px;
+  max-width: 20px;
+  max-height: 20px;
   fill: currentColor;
+  flex: 0 0 20px;
+}
+
+.home-social-button span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-social-button img,
+.home-social-button svg,
+.home-social-button i {
+  width: 20px !important;
+  height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+}
+
+.home-social-tiktok,
+.home-social-x {
+  background: #111111;
+}
+
+.home-social-facebook {
+  background: #1877f2;
+}
+
+.home-social-instagram {
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
+}
+
+.home-social-youtube {
+  background: #ff0000;
+}
+
+.home-social-whatsapp {
+  background: #25d366;
 }
 
 .home-hero-actions,
@@ -1160,7 +1194,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
-  margin-top: 2.1rem;
+  margin-top: 1.25rem;
 }
 
 .button-ghost {
@@ -2252,13 +2286,20 @@ h3 {
   }
 
   .home-social-button {
-    width: 36px;
-    height: 36px;
+    min-height: 36px;
+    max-height: 38px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.76rem;
   }
 
-  .home-social-button svg {
+  .home-social-button svg,
+  .home-social-button img,
+  .home-social-button i {
     width: 18px;
     height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+    flex-basis: 18px;
   }
 
   .home-candidate-photo {
