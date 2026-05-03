@@ -1211,7 +1211,7 @@ h3 {
 }
 
 .home-territory-title {
-  margin: 0 0 0.9rem;
+  margin: 1.35rem 0 0.9rem;
   text-align: center;
   font-family: "Bebas Neue", "Montserrat", sans-serif;
   font-size: clamp(2.8rem, 5vw, 4.8rem);
