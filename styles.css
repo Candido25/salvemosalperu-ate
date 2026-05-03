@@ -1027,10 +1027,10 @@ h3 {
 .home-hero {
   position: relative;
   overflow: hidden;
-  min-height: auto;
+  min-height: calc(100svh - 84px);
   display: flex;
   align-items: center;
-  padding: 1.4rem 0 0.45rem;
+  padding: 2.2rem 0;
   background: #ffffff;
 }
 
@@ -1063,10 +1063,13 @@ h3 {
   grid-template-columns: minmax(0, 0.92fr) minmax(380px, 0.72fr);
   gap: clamp(3rem, 5vw, 7rem);
   align-items: center;
+  min-height: 100%;
 }
 
 .home-hero-copy {
-  max-width: 620px;
+  display: grid;
+  align-content: center;
+  max-width: 560px;
 }
 
 .home-hero-copy h1 {
@@ -1091,19 +1094,11 @@ h3 {
 
 .home-hero-lead {
   max-width: 28ch;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0;
   font-size: clamp(1.18rem, 1.7vw, 1.45rem);
   font-weight: 700;
   line-height: 1.4;
   color: #313642;
-}
-
-.home-hero-support {
-  max-width: 42ch;
-  margin: 0;
-  font-size: 1.03rem;
-  line-height: 1.65;
-  color: #565c68;
 }
 
 .home-hero-actions,
@@ -1123,25 +1118,23 @@ h3 {
 .home-candidate-panel {
   position: relative;
   z-index: 1;
-  padding: 1.35rem;
+  display: grid;
+  align-items: center;
+  padding: 0;
   width: min(100%, 520px);
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.97);
-  border: 1px solid rgba(18, 18, 18, 0.08);
-  box-shadow: 0 26px 80px rgba(18, 18, 18, 0.1);
-  backdrop-filter: blur(10px);
 }
 
 .home-candidate-photo {
   position: relative;
   overflow: hidden;
   aspect-ratio: 4.2 / 5;
-  margin-bottom: 1.15rem;
+  margin: 0;
   border: 1px solid rgba(18, 18, 18, 0.08);
   border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(239, 35, 60, 0.08)),
     #ffffff;
+  box-shadow: 0 28px 80px rgba(18, 18, 18, 0.12);
 }
 
 .home-candidate-photo::after {
@@ -1149,8 +1142,8 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 10, 13, 0.02) 0%, rgba(10, 10, 13, 0.04) 56%, rgba(10, 10, 13, 0.42) 100%),
-    linear-gradient(135deg, rgba(239, 35, 60, 0.18) 0%, transparent 48%);
+    linear-gradient(180deg, rgba(10, 10, 13, 0.01) 0%, rgba(10, 10, 13, 0.03) 54%, rgba(10, 10, 13, 0.16) 100%),
+    linear-gradient(135deg, rgba(239, 35, 60, 0.12) 0%, transparent 45%);
   pointer-events: none;
 }
 
@@ -1158,58 +1151,9 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 16%;
+  object-position: center 14%;
   filter: saturate(1.03) contrast(1.02);
 }
-
-.home-candidate-photo figcaption {
-  margin-top: 0.7rem;
-  font-size: 0.92rem;
-  line-height: 1.45;
-  color: #606571;
-}
-
-.home-candidate-mark {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.55rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(171, 32, 46, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.home-candidate-name {
-  margin-bottom: 0.6rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--color-black);
-}
-
-.home-candidate-role {
-  margin: -0.2rem 0 0.7rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-red-deep);
-}
-
-.home-candidate-copy,
 .home-copy-block p,
 .home-cta-copy,
 .home-final-wrap p {
@@ -1219,16 +1163,19 @@ h3 {
   color: #515661;
 }
 
-.home-candidate-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 0.9rem;
-}
-
 .home-message {
   padding-top: 4rem;
   padding-bottom: 2rem;
+}
+
+.home-message-identity {
+  margin-bottom: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-red-deep);
 }
 
 .home-campaign-priorities {
@@ -2080,13 +2027,8 @@ h3 {
   }
 
   .home-hero {
-    min-height: auto;
-    padding: 1.4rem 0 0.8rem;
-  }
-
-  .home-priority-grid,
-  .home-ticket-grid {
-    grid-template-columns: 1fr;
+    min-height: calc(100svh - 84px);
+    padding: 1.8rem 0;
   }
 
   .home-candidate-panel {
@@ -2094,8 +2036,8 @@ h3 {
   }
 
   .home-candidate-photo {
-    aspect-ratio: 5 / 4;
-    max-height: 460px;
+    aspect-ratio: 4 / 4.6;
+    max-height: 440px;
   }
 
   .home-problem {
@@ -2176,7 +2118,8 @@ h3 {
   .long-grid,
   .home-problem-grid,
   .home-axis-grid,
-  .home-priority-grid {
+  .home-priority-grid,
+  .home-ticket-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2216,13 +2159,9 @@ h3 {
     font-size: 1.08rem;
   }
 
-  .home-candidate-panel {
-    padding: 1rem;
-  }
-
   .home-candidate-photo {
-    aspect-ratio: 1 / 1;
-    max-height: 360px;
+    aspect-ratio: 1 / 1.08;
+    max-height: 320px;
   }
 
   .home-candidate-photo img {
