@@ -1108,7 +1108,7 @@ h3 {
   margin-top: 1rem;
   position: relative;
   z-index: 2;
-  transform: translateY(-18.4rem);
+  transform: translateY(-24.8rem);
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -2289,7 +2289,7 @@ h3 {
     gap: 0.5rem;
     margin-top: 0.9rem;
     flex-wrap: wrap;
-    transform: translateY(-6rem);
+    transform: translateY(-7rem);
   }
 
   .home-social-button {
