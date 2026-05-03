@@ -1104,7 +1104,7 @@ h3 {
 .home-social-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  gap: 0.75rem;
   margin-top: 1rem;
   align-items: center;
   width: fit-content;
@@ -1115,16 +1115,16 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  min-height: 38px;
-  max-height: 40px;
-  padding: 0.55rem 0.9rem;
+  gap: 0.5rem;
+  min-height: 42px;
+  max-height: 42px;
+  padding: 0.6rem 1rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  box-shadow: 0 10px 24px rgba(18, 18, 18, 0.08);
+  box-shadow: 0 12px 28px rgba(18, 18, 18, 0.14);
   font-family: "Montserrat", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.84rem;
+  font-weight: 800;
   line-height: 1;
   color: #ffffff;
   transition:
@@ -1136,8 +1136,8 @@ h3 {
 .home-social-button:hover,
 .home-social-button:focus-visible {
   transform: translateY(-1px);
-  border-color: rgba(239, 35, 60, 0.22);
-  box-shadow: 0 14px 30px rgba(239, 35, 60, 0.12);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 16px 34px rgba(18, 18, 18, 0.18);
 }
 
 .home-social-button:focus-visible {
@@ -1157,6 +1157,7 @@ h3 {
 .home-social-button span {
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .home-social-button img,
@@ -1170,23 +1171,23 @@ h3 {
 
 .home-social-tiktok,
 .home-social-x {
-  background: #111111;
+  background: #0f0f10;
 }
 
 .home-social-facebook {
-  background: #1877f2;
+  background: linear-gradient(180deg, #2f86ff 0%, #1d67ea 100%);
 }
 
 .home-social-instagram {
-  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
+  background: linear-gradient(135deg, #f8a928 0%, #ef4e4e 38%, #dd2a7b 72%, #9b36b7 100%);
 }
 
 .home-social-youtube {
-  background: #ff0000;
+  background: linear-gradient(180deg, #ff2d20 0%, #ea0f0f 100%);
 }
 
 .home-social-whatsapp {
-  background: #25d366;
+  background: linear-gradient(180deg, #2ad46f 0%, #18b85a 100%);
 }
 
 .home-hero-actions,
@@ -2281,15 +2282,15 @@ h3 {
   }
 
   .home-social-row {
-    gap: 0.5rem;
+    gap: 0.55rem;
     margin-top: 0.9rem;
   }
 
   .home-social-button {
-    min-height: 36px;
+    min-height: 38px;
     max-height: 38px;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.76rem;
+    padding: 0.52rem 0.82rem;
+    font-size: 0.74rem;
   }
 
   .home-social-button svg,
