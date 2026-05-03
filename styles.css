@@ -1645,6 +1645,27 @@ h3 {
   margin-top: 2rem;
 }
 
+.proposal-topic-card {
+  display: block;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.proposal-topic-card:hover,
+.proposal-topic-card:focus-visible {
+  transform: translateY(-8px);
+  border-color: rgba(239, 35, 60, 0.24);
+  box-shadow: 0 24px 60px rgba(239, 35, 60, 0.12);
+}
+
+.proposal-topic-card:focus-visible {
+  outline: 3px solid rgba(239, 35, 60, 0.18);
+  outline-offset: 4px;
+}
+
 .home-documents .document-card {
   background: rgba(255, 255, 255, 0.96);
   border-color: rgba(18, 18, 18, 0.08);
