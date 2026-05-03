@@ -22,13 +22,18 @@
       property="og:image"
       content="https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png"
     />
+    <meta property="og:image:width" content="1001" />
+    <meta property="og:image:height" content="1571" />
+    <meta property="og:image:type" content="image/png" />
     <meta
       property="og:image:alt"
-      content="Candidato de Salvemos al Perú Ate"
+      content="Edwin Orlando Astucuri Coicaposa, candidato a la alcaldía de Ate"
     />
-    <meta property="og:url" content="https://salvemosalperu-ate.org.pe/index.html" />
+    <meta property="og:url" content="https://salvemosalperu-ate.org.pe/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Salvemos al Perú Ate" />
+    <meta name="image" content="https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png" />
+    <link rel="image_src" href="https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Salvemos al Perú Ate" />
     <meta
@@ -38,6 +43,10 @@
     <meta
       name="twitter:image"
       content="https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Edwin Orlando Astucuri Coicaposa, candidato a la alcaldía de Ate"
     />
     <link rel="canonical" href="https://salvemosalperu-ate.org.pe/" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -50,12 +59,60 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "PoliticalParty",
-        "name": "Salvemos al Perú Ate",
-        "url": "https://salvemosalperu-ate.org.pe/",
-        "logo": "https://salvemosalperu-ate.org.pe/img/logo-salvemos-al-peru-ate.svg",
-        "image": "https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png",
-        "description": "Sitio oficial de Salvemos al Perú Ate. Candidato, equipo distrital, regidores y propuestas para ordenar el distrito."
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://salvemosalperu-ate.org.pe/#webpage",
+            "url": "https://salvemosalperu-ate.org.pe/",
+            "name": "Salvemos al Perú Ate | Candidato y equipo distrital",
+            "description": "Sitio oficial de Salvemos al Perú Ate. Candidato, equipo distrital, regidores y propuestas para ordenar el distrito.",
+            "about": [
+              { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+              { "@id": "https://salvemosalperu-ate.org.pe/#candidate" }
+            ],
+            "primaryImageOfPage": { "@id": "https://salvemosalperu-ate.org.pe/#candidate-image" }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://salvemosalperu-ate.org.pe/#logo-image",
+            "url": "https://salvemosalperu-ate.org.pe/img/logo-salvemos-al-peru-ate.png",
+            "contentUrl": "https://salvemosalperu-ate.org.pe/img/logo-salvemos-al-peru-ate.png",
+            "caption": "Logo oficial de Salvemos al Perú Ate",
+            "width": 1200,
+            "height": 295
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://salvemosalperu-ate.org.pe/#candidate-image",
+            "url": "https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png",
+            "contentUrl": "https://salvemosalperu-ate.org.pe/img/candidato-salvemos-al-peru-ate.png",
+            "caption": "Edwin Orlando Astucuri Coicaposa, candidato a la alcaldía de Ate por Salvemos al Perú Ate",
+            "width": 1001,
+            "height": 1571
+          },
+          {
+            "@type": "PoliticalParty",
+            "@id": "https://salvemosalperu-ate.org.pe/#party",
+            "name": "Salvemos al Perú Ate",
+            "alternateName": "Salvemos al Perú - Ate",
+            "url": "https://salvemosalperu-ate.org.pe/",
+            "logo": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
+            "image": { "@id": "https://salvemosalperu-ate.org.pe/#logo-image" },
+            "description": "Organización política distrital de Salvemos al Perú Ate orientada a orden, seguridad y gestión municipal.",
+            "member": { "@id": "https://salvemosalperu-ate.org.pe/#candidate" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://salvemosalperu-ate.org.pe/#candidate",
+            "name": "Edwin Orlando Astucuri Coicaposa",
+            "jobTitle": "Candidato a la alcaldía de Ate",
+            "url": "https://salvemosalperu-ate.org.pe/",
+            "image": { "@id": "https://salvemosalperu-ate.org.pe/#candidate-image" },
+            "affiliation": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+            "worksFor": { "@id": "https://salvemosalperu-ate.org.pe/#party" },
+            "mainEntityOfPage": { "@id": "https://salvemosalperu-ate.org.pe/#webpage" }
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -65,7 +122,12 @@
       <header class="site-header">
         <div class="container header-inner">
           <a class="brand" href="#inicio" aria-label="Ir al inicio">
-            <img src="assets/logo-sap-ate.svg" alt="Salvemos al Perú - Ate" />
+            <img
+              src="img/logo-salvemos-al-peru-ate.png"
+              alt="Logo oficial de Salvemos al Perú Ate"
+              width="1200"
+              height="295"
+            />
           </a>
           <button
             class="nav-toggle"
@@ -111,12 +173,18 @@
             <aside class="home-candidate-panel" id="regidores">
               <span class="home-panel-label">Candidato a la alcaldía de Ate</span>
               <div class="home-candidate-photo">
-                <img
-                  src="img/candidato-salvemos-al-peru-ate.webp"
-                  alt="Edwin Orlando Astucuri Coicaposa, candidato a la alcaldía de Ate"
-                  width="1001"
-                  height="1571"
-                />
+                <picture>
+                  <source
+                    srcset="img/candidato-salvemos-al-peru-ate.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/candidato-salvemos-al-peru-ate.png"
+                    alt="Edwin Orlando Astucuri Coicaposa, candidato a la alcaldía de Ate por Salvemos al Perú Ate"
+                    width="1001"
+                    height="1571"
+                  />
+                </picture>
                 <span class="home-candidate-mark">Salvemos al Perú - Ate</span>
               </div>
               <p class="home-candidate-name">EDWIN ORLANDO ASTUCURI COICAPOSA</p>
